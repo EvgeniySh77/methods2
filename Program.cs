@@ -47,6 +47,8 @@ namespace methods
             Console.WriteLine("Мое имя: {0}", name);
             Console.WriteLine("Мой возраст: {0}", age);
 
+            ShowColor();
+
             Console.Write("Введите свое имя: ");
             name = Console.ReadLine();
             Console.Write("Введите ваш возраст цифрами:");
