@@ -4,9 +4,9 @@ namespace methods
 {
     class Program
     {        
-        static void ShowColor(string username)
+        static void ShowColor(string username, int age)
         {
-            Console.WriteLine($"{username} Напишите свой любимый цвет на английском с маленькой буквы");
+            Console.WriteLine($"{username}, {age} лет. {Environment.NewLine}Напишите свой любимый цвет на английском с маленькой буквы");
             var color = Console.ReadLine();
 
             switch (color)
@@ -47,7 +47,7 @@ namespace methods
             Console.WriteLine("Мое имя: {0}", name);
             Console.WriteLine("Мой возраст: {0}", age);
 
-            ShowColor(name);
+            ShowColor(name, age);
 
             Console.Write("Введите свое имя: ");
             name = Console.ReadLine();
@@ -57,7 +57,7 @@ namespace methods
             Console.WriteLine("Ваше имя: {0}", name);
             Console.WriteLine("Ваш возраст: {0}", age);
 
-            ShowColor(name);
+            ShowColor(name, age);
 
             Console.ReadKey();
         }
